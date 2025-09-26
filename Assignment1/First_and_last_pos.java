@@ -18,6 +18,7 @@ public class First_and_last_pos {
         sc.close();
     }
 
+    // Approach 1(Binary search)
     public static int search(int[] nums, int target, int pos) {
         int low = 0;
         int high = nums.length - 1;
@@ -43,4 +44,31 @@ public class First_and_last_pos {
         return ind;
 
     }
+    // Approach 2(Two Pointer)
+    // public static int[] search(int[] nums, int target) {
+    // int low=0;
+    // int high=nums.length-1;
+    // int []a=new int[2];
+    // a[0]=-1;
+    // a[1]=-1;
+    // while(low<=high){
+    // if(nums[low]!=target && nums[high]!=target){
+    // low++;
+    // high--;
+    // }
+    // else if(nums[low]==target && nums[high]!=target){
+    // high--;
+    // }
+    // else if(nums[low]!=target && nums[high]==target){
+    // low++;
+    // }
+    // else{
+    // a[0]=low;
+    // a[1]=high;
+    // break;
+    // }
+    // }
+
+    // return a;
+    // }
 }
