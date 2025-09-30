@@ -29,7 +29,6 @@ public class Convert_1D_to_2D {
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
-
         }
         sc.close();
     }
