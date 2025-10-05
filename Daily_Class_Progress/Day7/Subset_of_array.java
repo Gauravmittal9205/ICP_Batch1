@@ -12,7 +12,8 @@ public class Subset_of_array {
         for (int i = 0; i < n; i++) {
             nums[i] = sc.nextInt();
         }
-        subsets(nums);
+        List<List<Integer>> li = subsets(nums);
+        System.out.println(li);
         sc.close();
     }
 
@@ -36,12 +37,11 @@ public class Subset_of_array {
 
 }
 
+// Without Base Case Condition
 
-//Without Base Case Condition
-
-//  li.add(new ArrayList<>(a));
-//         for(int j=i;j<arr.length;j++){
-//             a.add(arr[j]);
-//             subset(arr,li,a,j+1);
-//             a.remove(a.size()-1);
-//         }
+// li.add(new ArrayList<>(a));
+// for(int j=i;j<arr.length;j++){
+// a.add(arr[j]);
+// subset(arr,li,a,j+1);
+// a.remove(a.size()-1);
+// }
